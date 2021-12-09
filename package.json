@@ -8,11 +8,13 @@
     "@testing-library/react": "11.1.0",
     "@testing-library/user-event": "12.1.10",
     "axios": "0.21.1",
+    "express": "4.17.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "4.2.0",
     "react-scripts": "4.0.3",
     "react-spinners": "0.10.6",
+    "react.build": "1.0.5",
     "uuid": "8.3.2"
   },
   "devDependencies": {
@@ -25,11 +27,12 @@
   "scripts": {
     "dev": "craco start",
     "build": "craco build",
+    "start": "node server/server.js",
     "prod:local": "craco build && serve -s build",
     "prod:cloud": "craco build && netlify deploy --prod --open --dir build",
     "prod:cloud:test": "craco build && netlify deploy --open --dir build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
   },
   "eslintConfig": {
     "extends": [
