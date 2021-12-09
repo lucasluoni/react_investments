@@ -27,12 +27,12 @@
   "scripts": {
     "dev": "craco start",
     "build": "craco build",
-    "start": "node server/server.js",
+    "start": "node index.js",
     "prod:local": "craco build && serve -s build",
     "prod:cloud": "craco build && netlify deploy --prod --open --dir build",
     "prod:cloud:test": "craco build && netlify deploy --open --dir build",
     "test": "craco test",
-    "eject": "react-scripts eject",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
