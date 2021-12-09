@@ -25,9 +25,9 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "scripts": {
+    "start": "node server/server.js",
     "dev": "craco start",
     "build": "craco build",
-    "start": "node index.js",
     "prod:local": "craco build && serve -s build",
     "prod:cloud": "craco build && netlify deploy --prod --open --dir build",
     "prod:cloud:test": "craco build && netlify deploy --open --dir build",
